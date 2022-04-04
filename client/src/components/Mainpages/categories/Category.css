@@ -1,0 +1,58 @@
+.categories {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px auto;
+  }
+  
+  .categories form {
+    width: 290px;
+    margin-bottom: 20px;
+  }
+  .category_form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid grey;
+    margin-top: 40px;
+  }
+  .categories label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .categories input,
+  button {
+    height: 35px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    border: 1px solid grey;
+  }
+  
+  .categories input {
+    width: 210px;
+  }
+  .categories button {
+    width: 60px;
+  
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .categories button:hover {
+    cursor: pointer;
+  }
+  
+  .categories .row {
+    min-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }

@@ -1,0 +1,86 @@
+*{
+  margin:0
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: 'Poppins', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import url("./components/Mainpages/utility/Filter.css");
+@import url("./components/Mainpages/auth/Login.css");
+@import url("./components/Headers/Header.css");
+
+@media (max-width: 915px) {
+  header .logo {
+    max-width: 180px;
+    flex: none;
+  }
+  header ul {
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 821px) {
+  header ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.98;
+    z-index: 99;
+    transition: 0.5s ease-in;
+  }
+  header .menu {
+    display: block;
+    cursor: pointer;
+  }
+  header ul li .menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  header {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 570px) {
+  .filter_menu .row span {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .filter_menu input {
+    margin: 0;
+  }
+  .filter_menu .sort {
+    flex: 1;
+  }
+  .filter_menu .sort select {
+    width: 100%;
+    min-width: 290px;
+    margin: 5px 0;
+  }
+  .login-page {
+    padding: 30px 10px;
+  }
+}
